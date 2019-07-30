@@ -1,3 +1,13 @@
-.kljukusa {
-  color: blue
+.compWidth {
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid #333
+
+}
+
+.styleOfPhotos {
+  display: inline-block;
+  margin: 30px;
+  text-align: center;
+  max-width: 200px;
 }
