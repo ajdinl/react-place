@@ -14,7 +14,7 @@ function App() {
       ) : (
         <div className='compWidth'>
           {data.map(({ id, title, url, thumbnailUrl }) => (
-            <div className='styleOfPhotos'>
+            <div className='styleOfPhotos' key={data.id}>
               <a href={url}>
               <img alt={title} src={thumbnailUrl} />
               </a>
