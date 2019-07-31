@@ -1,1 +1,1 @@
-My React or ReactJS place.
+React place.
