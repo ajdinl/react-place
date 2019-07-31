@@ -2,7 +2,7 @@ import React from 'react'
 import { useFetch } from "./hooks"
 
 
-function Home() {
+function Gallery() {
   const [data, loading] = useFetch(
     "https://jsonplaceholder.typicode.com/photos/"
   )
@@ -28,4 +28,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Gallery
