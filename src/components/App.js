@@ -1,16 +1,22 @@
 import React from "react"
-// import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Route,  } from 'react-router-dom'
+import Home from './Home'
+import Navbar from './Navbar'
 import Gallery from './Gallery'
-import Preview from './Preview'
+import About from './About'
 import '../style.css'
 
 
 function App() {
   return (
-    <div>
-      <Gallery />
-      <Preview />
-    </div>
+    <BrowserRouter>
+      <div>
+        <Navbar />
+        <Route exact path='/' component={Home} />
+        <Route path='/gallery' component={Gallery} />
+        <Route path='/about' component={About} />
+      </div>
+    </BrowserRouter>
   )
 }
 
